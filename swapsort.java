@@ -7,18 +7,26 @@ public class swapsort
 	{
 		int fixme [] = new int [5];
 		Scanner input = new Scanner (System.in);
-		System.out.println("What numbers would you like in the array pick 5\n");
+		System.out.println("What numbers would you like in the array pick 5.");
 		for (int i = 0; i < fixme.length; i++)
 		{
 			fixme[i]= input.nextInt();
 		}
-        System.out.println("Here is what is in your list unsorted\n");
-        for (int k = 0; k < fixme.length; k++){
-			System.out.print(fixme[k]+", ");
-		}
+        System.out.print("Here is what is in your list unsorted: ");
+        int k = 0;
+            while (k != fixme.length - 1) {
+                System.out.print(fixme[k]+", ");
+                k++;
+            }
+		    System.out.print(fixme[k]+"");
+        System.out.println("\n");
 		sendto(fixme);
 		System.out.print("Here is what is in your list sorted: ");
 		for (int j = 0; j < fixme.length; j++){
+            if (j == fixme.length - 1) {
+                System.out.print(fixme[j]+"");
+                return;
+            }
 			System.out.print(fixme[j]+", ");
 		}
 	}
