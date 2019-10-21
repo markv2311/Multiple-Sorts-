@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class swapsort 
+public class multipleSorts 
 {
 	public static void main (String args[])
 	{
