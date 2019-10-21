@@ -1,2 +1,2 @@
-# swapsort
-Swapsort 
+# Multiple Sorts 
+Selection - Swap - QuickSort 
